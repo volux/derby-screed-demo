@@ -1,12 +1,14 @@
 Title
- | ToDo Demo
+ | ToDo Demo ({{Object.keys(cursors.todo.data).length}}}
 
 Body
 
   header
 
     h1
-      span.title ToDo Demo
+      with screedCursorPropertiesForUser(_session.userId) as #user
+        span.user-info(style="color: {{#user.color}}; background-color: {{#user.bgColor}}") {{#user.label}}
+      span.title ToDo Demo. Use WebKit browsers only!
 
   main
 
