@@ -1,5 +1,5 @@
 Title
- | ToDo Demo ({{Object.keys(cursors.todo.data).length}}}
+ | ToDo Demo ({{Object.keys(cursors.todo.data).length}})
 
 Body
 
@@ -7,7 +7,7 @@ Body
 
     h1
       with screedCursorPropertiesForUser(_session.userId) as #user
-        span.user-info(style="color: {{#user.color}}; background-color: {{#user.bgColor}}") {{#user.label}}
+        span.user-info(style="color: {{#user.color}}; background-color: {{#user.bgColor}}" title="Your cursor flag") {{#user.label}}
       span.title ToDo Demo. Use WebKit browsers only!
 
   main
