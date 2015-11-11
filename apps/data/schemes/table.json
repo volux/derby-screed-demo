@@ -1,0 +1,67 @@
+{
+  "scheme": {
+    "name": "table",
+    "role": "table",
+    "content": {
+      "type": "root",
+      "merge": "child",
+      "items": [
+        {
+          "name": "members",
+          "role": "tbody",
+          "content": {
+            "type": "heap",
+            "merge": "child",
+            "empty": false,
+            "items": [
+              {
+                "name": "user",
+                "role": "tr",
+                "content": {
+                  "type": "table",
+                  "merge": "append",
+                  "empty": true,
+                  "items": [
+                    {
+                      "name": "firstName",
+                      "role": "td",
+                      "content": {
+                        "type": "input",
+                        "merge": false,
+                        "empty": true,
+                        "placeholder": "",
+                        "shift": false
+                      }
+                    },
+                    {
+                      "name": "lastName",
+                      "role": "td",
+                      "content": {
+                        "type": "input",
+                        "merge": false,
+                        "empty": true,
+                        "placeholder": "",
+                        "shift": false
+                      }
+                    },
+                    {
+                      "name": "nick",
+                      "role": "td",
+                      "content": {
+                        "type": "input",
+                        "merge": false,
+                        "empty": true,
+                        "placeholder": "",
+                        "shift": false
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

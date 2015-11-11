@@ -1,0 +1,16 @@
+{
+  "scheme": "table",
+  "table": {
+    "members": [
+      {
+        "user": {
+          "firstName": "",
+          "lastName": "",
+          "nick": ""
+        }
+      }
+    ]
+  },
+  "lookup": {
+  }
+}

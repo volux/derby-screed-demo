@@ -1,0 +1,96 @@
+@import "nib"
+global-reset()
+reset-html5()
+
+$examples-bg-color = rgba(15, 35, 20, .5)
+
+@media screen
+
+  body
+    padding 40px 1em
+    background-color $examples-bg-color
+
+
+  header
+    position   fixed
+    top        0
+    left       0
+    size       100% 36px
+    box-sizing border-box
+    padding    10px
+    background-color $examples-bg-color
+    z-index 1
+
+    .user-info
+      display inline-block
+      padding 0 .3em
+      margin-right 1em
+      font-family sans-serif
+      font-weight normal
+      color white
+      box-shadow 0 1px 1px $examples-bg-color
+
+    .title
+      color rgba(0, 250, 0, .7)
+      text-shadow 0 1px 1px $examples-bg-color
+    a
+      display inline-block
+      padding-left 1em
+      color white
+      text-decoration none
+      text-shadow 0 1px 1px $examples-bg-color
+      &:hover
+        text-decoration underline
+    .warning
+      display inline-block
+      padding-left 1em
+      color rgba(250, 200, 0, .7)
+      text-shadow 0 1px 1px $examples-bg-color
+
+  footer
+    position fixed
+    bottom 0
+    left 0
+    width 100%
+    height 24px
+    padding-right 1em
+    box-sizing border-box
+    p
+      text-align right
+    a
+      color white
+      text-decoration none
+      text-shadow 0 1px 1px $examples-bg-color
+      &:hover
+        text-decoration underline
+
+  .connection
+    position fixed
+    text-align center
+    top 0
+    left 0
+    width 100%
+    height 0
+    z-index 1
+  .connection > .alert
+    background rgba(255, 241, 168, .8)
+    border 1px solid $examples-bg-color
+    border-top 0
+    border-radius 0 0 3px 3px
+    display inline-block
+    line-height 21px
+    padding 0 12px
+
+@media all
+
+  main
+    //
+
+@media print
+
+  header
+    display none
+
+$screed-bg-color = rgba(80, 50, 90, .3)
+
+@import "../../../node_modules/derby-screed"

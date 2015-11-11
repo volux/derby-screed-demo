@@ -1,5 +1,5 @@
 Title
- | ToDo Demo ({{Object.keys(cursors.todo.data).length}})
+ | Table Demo ({{Object.keys(cursors.table.data).length}})
 
 Body
 
@@ -8,19 +8,19 @@ Body
     h1
       with screedCursorPropertiesForUser(_session.userId) as #user
         span.user-info(style="color: {{#user.color}}; background-color: {{#user.bgColor}}" title="Your cursor flag") {{#user.label}}
-        span.title Demos:
-        a(href="/table") Table
-        a(href="/") ToDo
-        span.warning  Use WebKit browsers only!
+      span.title Demos:
+      a(href="/table") Table
+      a(href="/") ToDo
+      span.warning  Use WebKit browsers only!
 
   main
 
     view(
     is="d-screed"
-    data="{{screed.todo.doc}}"
+    data="{{screed.table.doc}}"
     scheme="{{_page.scheme}}"
     blank="{{_page.blank}}"
-    cursors="{{cursors.todo.data}}"
+    cursors="{{cursors.table.data}}"
     userId="{{_session.userId}}"
     docClasses=""
     showPosition="true"

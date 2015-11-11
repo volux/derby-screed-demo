@@ -1,0 +1,44 @@
+{
+  "scheme": "table",
+  "table": {
+    "members": [
+      {
+        "user": {
+          "firstName": "Nate",
+          "lastName": "Smith",
+          "nick": "nateps"
+        }
+      },
+      {
+        "user": {
+          "firstName": "Ian",
+          "lastName": "Johnson",
+          "nick": "enjalot"
+        }
+      },
+      {
+        "user": {
+          "firstName": "Pavel",
+          "lastName": "Zhukov",
+          "nick": "cray0000"
+        }
+      },
+      {
+        "user": {
+          "firstName": "Artur",
+          "lastName": "Zayats",
+          "nick": "zag2art"
+        }
+      },
+      {
+        "user": {
+          "firstName": "Osman",
+          "lastName": "Mazinov",
+          "nick": "ovvn"
+        }
+      }
+    ]
+  },
+  "lookup": {
+  }
+}
