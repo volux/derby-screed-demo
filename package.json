@@ -1,6 +1,6 @@
 {
   "name": "derby-screed-examples",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "Demo site for derby-screed",
   "main": "server.js",
   "scripts": {
