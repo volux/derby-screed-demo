@@ -1,0 +1,34 @@
+{
+  "scheme": "todo",
+  "doc": {
+    "todo": [
+      {
+        "task": {
+          "title": "Buy milk!",
+          "complete": true
+        }
+      },
+      {
+        "task": {
+          "title": "Contribute Derby Screed",
+          "complete": false
+        }
+      },
+      {
+        "task": {
+          "title": "Create custom Derby Screed component",
+          "complete": false
+        }
+      },
+      {
+        "task": {
+          "title": "Create visual scheme builder for Derby Screed",
+          "complete": false
+        }
+      }
+    ]
+  },
+  "lookup": {
+    "title": ["?"]
+  }
+}

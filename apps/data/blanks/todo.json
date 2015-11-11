@@ -1,0 +1,16 @@
+{
+  "scheme": "todo",
+  "doc": {
+    "todo": [
+      {
+        "task": {
+          "title": "",
+          "complete": false
+        }
+      }
+    ]
+  },
+  "lookup": {
+    "task": ["…"]
+  }
+}

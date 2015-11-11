@@ -1,0 +1,71 @@
+// for to do scheme
+
+@media screen
+
+  .screed
+    .todo
+      background #eaeaea url("//raw.githubusercontent.com/zag2art/derby-example-todo/master/public/bg.png")
+      article
+        margin-left  .2in
+        &:before
+          content: ''
+          border-left 1px solid #f5d6d6
+          border-right 1px solid #f5d6d6
+          width 2px
+          position absolute
+          top 0
+          left 1in
+          height 100%
+      .task
+        color #4d4d4d
+
+@media all
+
+  .screed
+    .todo
+      font-family  sans-serif
+      font-style   normal
+      font-weight  normal
+      font-kerning none
+      word-spacing 0
+
+      counter-reset  task
+
+      .task
+        margin-bottom .8em
+        position      relative
+        counter-increment task
+        font-size    16pt
+
+        &:last-of-type
+          margin-bottom 0
+
+        .title
+          display inline-block
+          width 22em
+          &:before
+            position absolute
+            left     -3em
+            content  "  " counter(task) "."
+            display  inline-block
+
+        .complete
+          padding-left .25em
+          margin-left .75em
+          margin-top -.5em
+
+        &.complete
+          color #7f7f7f
+          .title
+            text-decoration line-through
+          &:before
+            content  "✓"
+            position absolute
+            left     -1in
+            top -.2em
+            font-size 150%
+
+@media print
+  .screed
+    .todo
+      margin-left  1in

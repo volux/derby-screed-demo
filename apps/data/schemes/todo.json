@@ -1,0 +1,75 @@
+{
+  "scheme": {
+    "name": "todo",
+    "role": "doc",
+    "content": {
+      "type": "root",
+      "merge": "child",
+      "items": [
+        {
+          "name": "todo",
+          "role": "section",
+          "content": {
+            "type": "heap",
+            "merge": "append",
+            "items": [
+              {
+                "name": "task",
+                "role": "todo-task",
+                "content": {
+                  "type": "form",
+                  "merge": "append",
+                  "items": [
+                    {
+                      "name": "title",
+                      "role": "todo-task-title",
+                      "content": {
+                        "type": "input",
+                        "merge": false,
+                        "empty": false,
+                        "placeholder": " ",
+                        "keepSpaces": true,
+                        "shift": {
+                          "for": "dataText",
+                          "on": "ring",
+                          "ruler": "lookup"
+                        },
+                        "extend": {
+                          "with": "lookup",
+                          "by": "name",
+                          "is": "title"
+                        }
+                      }
+                    },
+                    {
+                      "name": "complete",
+                      "role": "check",
+                      "content": {
+                        "type": "boolean",
+                        "merge": false,
+                        "keepSpaces": true,
+                        "shift": {
+                          "for": "data",
+                          "on": "ring",
+                          "ruler": "items",
+                          "items": [
+                            {
+                              "name": false
+                            },
+                            {
+                              "name": true
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

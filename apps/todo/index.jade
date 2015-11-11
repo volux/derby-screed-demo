@@ -1,0 +1,27 @@
+Title
+ | ToDo Demo
+
+Body
+
+  header
+
+    h1
+      span.title ToDo Demo
+
+  main
+
+    view(
+    is="d-screed"
+    data="{{screed.todo.doc}}"
+    scheme="{{_page.scheme}}"
+    blank="{{_page.blank}}"
+    cursors="{{cursors.todo.data}}"
+    userId="{{_session.userId}}"
+    docClasses=""
+    showPosition="true"
+    debug="true"
+    )
+
+  footer
+    p
+      a(href="https://github.com/volux/derby-screed") derby-screed on GitHub

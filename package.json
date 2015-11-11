@@ -1,0 +1,31 @@
+{
+  "name": "derby-screed-examples",
+  "version": "0.1.0",
+  "description": "Demo site for derby-screed",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volux/derby-screed-examples.git"
+  },
+  "keywords": [
+    "derby",
+    "derbyjs",
+    "multicursor",
+    "contenteditable",
+    "component"
+  ],
+  "author": "Andrey Skulov <andrey.skulov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volux/derby-screed-examples/issues"
+  },
+  "homepage": "https://github.com/volux/derby-screed-examples#readme",
+  "dependencies": {
+    "derby-example-server": "github:volux/derby-example-server",
+    "derby-screed": "github:volux/derby-screed"
+  }
+}
