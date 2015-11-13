@@ -1,0 +1,41 @@
+index
+  //
+
+title
+  | Demo {{_page.appName}} ({{_page.cursorsCount}})
+
+menu
+
+  span.title Demos:
+  a(href="/table" class="{{if _page.appName === 'table'}}active{{/}}") Table
+  a(href="/" class="{{if _page.appName === 'todo'}}active{{/}}") ToDo
+
+header
+
+  header
+    h1
+      with screedCursorPropertiesForUser(_session.userId) as #user
+        span.user-info(style="color: {{#user.color}}; background-color: {{#user.bgColor}}" title="Your cursor flag") {{#user.label}}
+      view(is="menu")
+      span.warning  Use WebKit browsers only!
+
+footer
+
+  footer
+    p
+      a(href="https://github.com/volux/derby-screed") derby-screed on GitHub
+
+main
+
+  main
+    view(
+    is="d-screed"
+    data="{{screed[_page.appName].doc}}"
+    scheme="{{_page.scheme}}"
+    blank="{{_page.blank}}"
+    cursors="{{cursors[_page.appName].data}}"
+    userId="{{_session.userId}}"
+    docClasses=""
+    showPosition="true"
+    debug="true"
+    )

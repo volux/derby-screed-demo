@@ -1,33 +1,9 @@
+import(src="../common")
+
 Title
- | ToDo Demo
-  //({-{Object.keys(cursors.todo.data).length}})
+  view(is="common:title")
 
 Body
-
-  header
-
-    h1
-      with screedCursorPropertiesForUser(_session.userId) as #user
-        span.user-info(style="color: {{#user.color}}; background-color: {{#user.bgColor}}" title="Your cursor flag") {{#user.label}}
-        span.title Demos:
-        a(href="/table") Table
-        a(href="/") ToDo
-        span.warning  Use WebKit browsers only!
-
-  main
-
-    view(
-    is="d-screed"
-    data="{{screed.todo.doc}}"
-    scheme="{{_page.scheme}}"
-    blank="{{_page.blank}}"
-    cursors="{{cursors.todo.data}}"
-    userId="{{_session.userId}}"
-    docClasses=""
-    showPosition="true"
-    debug="true"
-    )
-
-  footer
-    p
-      a(href="https://github.com/volux/derby-screed") derby-screed on GitHub
+  view(is="common:header")
+  view(is="common:main")
+  view(is="common:footer")
