@@ -12,4 +12,4 @@ app.use(require('./components'));
 app.loadViews(__dirname);
 app.loadStyles(__dirname);
 
-require('../common')(app, '/');
+require('../common')(app, '/todo');

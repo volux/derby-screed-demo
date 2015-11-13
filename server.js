@@ -1,6 +1,7 @@
 var options = require('./config');
 var apps = [
-  require('./apps/todo')
+  require('./apps/root')
+, require('./apps/todo')
 , require('./apps/table')
 ];
 

@@ -1,0 +1,27 @@
+import(src="../common")
+
+Title
+  | DerbyJS Screed demos and tools
+
+Body
+  header
+    h1
+      span.title DerbyJS Screed demos and tools
+      view(is="common:menu")
+
+  main
+    .intro A DerbyJS component library for live editing structured data with coworkers.
+    .demo
+      h2
+        a(href="/table") Table
+      .description
+        a(href="/table")
+          img(src="/images/demo_table.png")
+    .demo
+      h2
+        a(href="/todo") ToDo
+      .description
+        a(href="/todo")
+          img(src="/images/demo_todo.png")
+
+  view(is="common:footer")
